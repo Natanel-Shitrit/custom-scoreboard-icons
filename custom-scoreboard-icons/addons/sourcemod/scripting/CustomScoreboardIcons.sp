@@ -219,7 +219,7 @@ public void OnMapStart()
 					kv.GetString(NULL_STRING, sClientSteamID, sizeof(sClientSteamID));
 					newIcon.AddPlayerToAccessList(sClientSteamID);
 					
-				} while (kv.GotoNextKey());
+				} while (kv.GotoNextKey(false));
 				
 				kv.GoBack();
 			}
